@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import './App.css'
+import UserForm from './components/user-form/user-form'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <UserForm/>
     </>
   )
 }
