@@ -12,6 +12,7 @@ function UserForm() {
     };
     return (
         <>
+        <h2>Форма</h2>
         <div className={style.input_container}>
             <input className={style.input} type="text" placeholder="Введите имя" value={userName} onChange={e => handleNameInput(e.target.value)}/>
             <input className={style.input} type="text" placeholder="Введите Email" value={userEmail} onChange={e => handleEmailInput(e.target.value)}/>
