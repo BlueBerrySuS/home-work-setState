@@ -7,6 +7,10 @@
 
 .clicker_display {
     font-size: 30px;
+    background-color: lightgray;
+    border:1px solid gray;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 
 .clicker_button {
