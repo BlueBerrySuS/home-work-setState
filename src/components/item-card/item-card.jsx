@@ -19,7 +19,7 @@ function ItemCard({ id }) {
         if(id) fetchData();
     }, [id])
 
-
+    
     return (
         <>
         {item && <div key={id} className={style.item_card}>
@@ -28,10 +28,6 @@ function ItemCard({ id }) {
                 <h2 className={style.item_title}>{item.name}</h2>
                 <ItemCardDicription item={item}/>
             </div>
-            <button onClick={handleClick}>
-                {!isVisible && "Показать описание"}
-                {isVisible && "Показать описание"}
-            </button>
         </div>}
         </>
     ) 

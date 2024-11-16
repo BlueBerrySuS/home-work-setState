@@ -1,0 +1,13 @@
+.discription.hidden {
+    max-height: 0px;
+}
+
+.discription {
+    max-height: 500px;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+.button {
+    padding: 10px;
+}
