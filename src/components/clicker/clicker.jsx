@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from './clicker.module.css';
+import Title from "../title/title";
 
 function Clicker() {
     const [clickCount, setClickCount] = useState(0);
@@ -24,8 +25,8 @@ function Clicker() {
     };
     return (
         <>
+        <Title title={"Кликер"} discription={"Можно щелкать до 10"}/>
         <div className={style.clicker}>
-            <h2>Кликер</h2>
             <h2 className={style.clicker_display} style={{color: fontColor}}>{clickCount}</h2>
             <button className={style.clicker_button} onClick={handleClick}>Жми</button>
         </div>

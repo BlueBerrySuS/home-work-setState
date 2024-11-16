@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./user-form.module.css";
+import Title from "../title/title";
 
 function UserForm() {
     const [userName, setUserName] = useState("");
@@ -12,7 +13,7 @@ function UserForm() {
     };
     return (
         <>
-        <h2>Форма</h2>
+        <Title title={"Форма"} discription={"Можно ввожить данные, которые динамично выведяться на странице"}/>
         <div className={style.input_container}>
             <input className={style.input} type="text" placeholder="Введите имя" value={userName} onChange={e => handleNameInput(e.target.value)}/>
             <input className={style.input} type="text" placeholder="Введите Email" value={userEmail} onChange={e => handleEmailInput(e.target.value)}/>
